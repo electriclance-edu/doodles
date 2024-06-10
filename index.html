@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="onload()">
+        <div class="content">
+            <div class="left">
+                <div class="imageContainer">
+                    <div class="layer" id="layer-skin" style="--url:url(./resources/skin.png)"></div>
+                    <div class="layer" id="layer-outline"></div>
+                    <div class="layer" id="layer-hair"></div>
+                    <div class="layer" id="layer-cloth"></div>
+                    <div class="layer" id="layer-face"></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="section">
+                    <p class="sectionHeader">Hair</p>
+                    <div class="selectors" id="selectors-hair">
+                        <p class="selector" id="hair-cone"   onclick="setImage('hair','cone')"    >Coney</p>
+                        <p class="selector" id="hair-leafy"  onclick="setImage('hair','leafy')"   >Leafy</p>
+                        <p class="selector" id="hair-red"    onclick="setImage('hair','red')"     >Flowy</p>
+                        <p class="selector" id="hair-bang"   onclick="setImage('hair','bang')"    >One Bang</p>
+                        <p class="selector" id="hair-frerne" onclick="setImage('hair','frerne')"  >Frerne</p>
+                        <p class="selector" id="hair-none"   onclick="setImage('hair','none')"    >None</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <p class="sectionHeader">Face</p>
+                    <div class="selectors" id="selectors-face">
+                        <p class="selector" id="face-neu"         onclick="setImage('face','neu')"        >Neutral</p>
+                        <p class="selector" id="face-close"       onclick="setImage('face','close')"      >Closed Eyes</p>
+                        <p class="selector" id="face-cry"         onclick="setImage('face','cry')"        >Cry</p>
+                        <p class="selector" id="face-frustration" onclick="setImage('face','frustration')">Frustrated</p>
+                        <p class="selector" id="face-really"      onclick="setImage('face','really')"     >Really?</p>
+                        <p class="selector" id="face-wink"        onclick="setImage('face','wink')"       >Wink</p>
+                        <p class="selector" id="face-heh"         onclick="setImage('face','heh')"        >Heh</p>
+                        <p class="selector" id="face-none"        onclick="setImage('face','none')"       >None</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <p class="sectionHeader">Cloth</p>
+                    <div class="selectors" id="selectors-cloth">
+                        <p class="selector" id="cloth-monk"   onclick="setImage('cloth','monk')"    >Monk</p>
+                        <p class="selector" id="cloth-turtle" onclick="setImage('cloth','turtle')"  >Turtle</p>
+                        <p class="selector" id="cloth-cape"   onclick="setImage('cloth','cape')"    >Cape</p>
+                        <p class="selector" id="cloth-floppy" onclick="setImage('cloth','floppy')"  >Floppy</p>
+                        <p class="selector" id="cloth-none"   onclick="setImage('cloth','none')"    >None</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <p class="sectionHeader">Outline</p>
+                    <div class="selectors" id="selectors-outline">
+                        <p class="selector" id="outline-clean"  onclick="setImage('outline','clean')">Clean</p>
+                        <p class="selector" id="outline-sketch" onclick="setImage('outline','sketch')">Sketch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
